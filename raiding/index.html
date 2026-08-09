@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Raiding — $IUG docs</title><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="preload" as="font" type="font/woff2" href="/fonts/MartianMono-Bold.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="/fonts/FixelText-Regular.woff2" crossorigin><link rel="stylesheet" href="/_astro/_..CxI_XpfV.css"></head><body><a class="skip" href="#doc">Skip to content</a><header class="topbar"><a class="brand" href="/"><b>$IUG</b><span class="brand__tag">docs</span></a><a class="topbar__out" href="https://iugarc.xyz" rel="noopener noreferrer">The $IUG site ↗</a></header><div class="shell"><!-- MOBILE: a checkbox disclosure. DESKTOP: the control is hidden and the
+           panel is always shown (see .sidenav in global.css) — one control, no
+           script.
+
+           NOT <details>: Chromium hides a closed <details>'s content with
+           content-visibility, which `display: block` does NOT override, so
+           force-opening one in CSS left the desktop sidebar laid out but
+           unpainted — a blank column. A checkbox is plain elements, so `display`
+           is the whole story at every width. --><div class="sidenav"><input class="navtoggle" type="checkbox" id="navToggle" aria-label="Documentation menu"><label class="sidenav__summary" for="navToggle"><span class="sidenav__summarytxt">Documentation menu</span></label><nav class="sidenav__body" aria-label="Documentation"><div class="navgroup"><p class="navgroup__title">Start here</p><ul class="navgroup__list"><li><a class="navlink" href="/">Overview</a></li></ul></div><div class="navgroup"><p class="navgroup__title">For holders</p><ul class="navgroup__list"><li><a class="navlink" href="/how-the-loop-works">How the loop works</a></li><li><a class="navlink" href="/tokenomics">Tokenomics &amp; guarantees</a></li><li><a class="navlink" href="/hold-and-earn">Hold &amp; earn</a></li><li><a class="navlink" href="/safety">Safety &amp; FAQ</a></li></ul></div><div class="navgroup"><p class="navgroup__title">Raiding</p><ul class="navgroup__list"><li><a class="navlink is-current" href="/raiding" aria-current="page">Raiding</a></li></ul></div><div class="navgroup"><p class="navgroup__title">Reference</p><ul class="navgroup__list"><li><a class="navlink" href="/reference">Reference</a></li></ul></div></nav></div><main class="doc" id="doc"><article class="prose"><h1 id="raiding">Raiding</h1>
+<p>Raiding is how the 10% growth share pays people who post about $IUG. You write a post on X, it is checked against a set of rules and scored by quality, and qualifying posts earn USDC out of the raid pot. This is separate from holder rewards — you can raid without holding, and hold without raiding.</p>
+<h2 id="registering">Registering</h2>
+<p>Before you can raid you link two things: your X account and a wallet.</p>
+<ul>
+<li><strong>X account.</strong> You sign in with X so the system knows the posts are yours. One X account per wallet, and your account must be past a minimum age — throwaway accounts made yesterday do not qualify.</li>
+<li><strong>Wallet.</strong> You sign a message with your wallet to prove you own it. This is a signature, not a transaction; it costs nothing and moves nothing. Raid rewards are paid to this wallet.</li>
+</ul>
+<h2 id="what-you-post">What you post</h2>
+<p>A raid is a post on X that promotes $IUG. It can be a reply to a whitelisted account, a quote of one, or a standalone post of your own. You submit the link to your post on the raid board, and it goes through the checks below.</p>
+<h2 id="the-rules-in-the-order-they-are-checked">The rules, in the order they are checked</h2>
+<p>A post has to clear each of these. The first one it fails is the reason it is rejected, and the board tells you which.</p>
+<ol>
+<li><strong>It is your post.</strong> The author must be the X account you registered.</li>
+<li><strong>The account you engage is whitelisted</strong> (for replies and quotes). The curated list of accounts worth raiding is on the raid board.</li>
+<li><strong>The post you reply to is fresh</strong> — no more than 30 minutes old when you post. For standalone posts instead, there is a limit of one every 30 minutes.</li>
+<li><strong>It names the project</strong> — the $IUG ticker, the official contract address, or the project’s X handle. Any one is enough.</li>
+<li><strong>It contains no other contract address.</strong> A post carrying some other token’s address is rejected outright, so raids cannot be used to point people at a scam.</li>
+<li><strong>It is not a near-copy</strong> of a post already raided. Recycling the same text does not earn twice.</li>
+<li><strong>It passes the content gate.</strong> An AI reader scores whether the post actually says something (see below).</li>
+<li><strong>Holding to earn.</strong> You may raid without holding $IUG, but to be <em>paid</em> for a raid you need at least $25 of $IUG, the same floor as holder rewards. A raid from a wallet under $25 is accepted and scored but earns nothing.</li>
+</ol>
+<h2 id="how-posts-are-scored">How posts are scored</h2>
+<p>The content gate looks for two things: a <strong>case</strong> and the <strong>mechanic</strong>.</p>
+<ul>
+<li>A <strong>case</strong> is a reason to care — an argument, a personal take, a joke that lands, an honest observation. Something that would make a reader pay attention.</li>
+<li>The <strong>mechanic</strong> is an accurate description of how $IUG works — the 5% fee, the conversion to USDC, the 80% to holders, the automatic payout.</li>
+</ul>
+<p>A post with both earns the top tier. A case with no mechanic, or a mechanic with no case, earns less. A post that does neither — a bare ticker, generic hype, “excited to see where this goes” — earns nothing. Copy-paste templates, spammy emoji walls, and “next 100x, don’t miss it” framing are rejected on sight, whatever else they contain.</p>
+<p>Points depend on the post type and its tier:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Low</th>
+<th>Mid</th>
+<th>High</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reply</td>
+<td>5</td>
+<td>10</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Standalone</td>
+<td>4</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Quote</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p>Replies and quotes also earn a <strong>speed bonus</strong> for being early: up to +10 for a reply and +3 for a quote, decaying evenly to zero across the 30-minute freshness window. The sooner you engage a fresh post, the more the bonus is worth. Standalone posts have no speed bonus.</p>
+<h2 id="getting-paid">Getting paid</h2>
+<p>Points accrue over a cycle. At the end of it, the raid pot for that cycle is split across raiders by points earned, and paid in USDC to the wallet you registered. Points are computed from X’s own timestamps, so a post verified a little late still earns exactly what its timing was worth.</p>
+</article></main><!-- In-page anchors. Rendered only when the page has more than one H2:
+           a rail listing a single section is noise. --><aside class="rail" aria-label="On this page"><p class="rail__title">On this page</p><ul class="rail__list"><li><a class="rail__link" href="#registering">Registering</a></li><li><a class="rail__link" href="#what-you-post">What you post</a></li><li><a class="rail__link" href="#the-rules-in-the-order-they-are-checked">The rules, in the order they are checked</a></li><li><a class="rail__link" href="#how-posts-are-scored">How posts are scored</a></li><li><a class="rail__link" href="#getting-paid">Getting paid</a></li></ul></aside></div><footer class="foot"><p class="cap">$IUG — documentation</p><p class="cap">Arc · chain 5042</p></footer></body></html>
