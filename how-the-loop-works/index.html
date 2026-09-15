@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How the loop works — $IUG docs</title><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="preload" as="font" type="font/woff2" href="/fonts/MartianMono-Bold.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="/fonts/FixelText-Regular.woff2" crossorigin><link rel="stylesheet" href="/_astro/_..CxI_XpfV.css"></head><body><a class="skip" href="#doc">Skip to content</a><header class="topbar"><a class="brand" href="/"><b>$IUG</b><span class="brand__tag">docs</span></a><a class="topbar__out" href="https://iugarc.xyz" rel="noopener noreferrer">The $IUG site ↗</a></header><div class="shell"><!-- MOBILE: a checkbox disclosure. DESKTOP: the control is hidden and the
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How the loop works — $IUG docs</title><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="preload" as="font" type="font/woff2" href="/fonts/MartianMono-Bold.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="/fonts/FixelText-Regular.woff2" crossorigin><link rel="stylesheet" href="/_astro/_..CxI_XpfV.css"></head><body><a class="skip" href="#doc">Skip to content</a><header class="topbar"><a class="brand" href="/"><b>$IUG</b><span class="brand__tag">docs</span></a></header><div class="shell"><!-- MOBILE: a checkbox disclosure. DESKTOP: the control is hidden and the
            panel is always shown (see .sidenav in global.css) — one control, no
            script.
 
@@ -14,10 +14,10 @@
 <h2 id="conversion-to-usdc">Conversion to USDC</h2>
 <p>The fee builds up inside the pool as a mix of $IUG and USDC. Every 15 minutes the protocol collects it and swaps the $IUG portion for USDC, so what’s left to hand out is all in one currency.</p>
 <h2 id="the-split">The split</h2>
-<p>That USDC is divided by fixed percentages, written into the contract as constants. There is no owner and no setter, so these numbers cannot change after launch:</p>
+<p>That USDC is divided by fixed percentages, written into the contract as constants. There is no setter for them, so not even the contracts’ owner multisig can change these numbers after launch:</p>
 <ul>
 <li><strong>80% to holders</strong></li>
-<li>10% to growth — raid rewards, plus buybacks that compound the pool</li>
+<li>10% to growth — sent to one address; by policy it funds raid rewards and buybacks that add the bought $IUG back to the pool as liquidity</li>
 <li>10% to infrastructure — the cost of running the keeper and the reward services</li>
 </ul>
 <p>As a fraction of trade volume, the holder share works out to about 4% of everything traded.</p>
@@ -26,6 +26,6 @@
 <p>To qualify for a round you need at least $25 of $IUG at the moment of the snapshot. That is the whole gate. There is no hold-time requirement, so a wallet that qualifies this round gets paid this round.</p>
 <p>If a payment can’t be delivered — for example a contract address that rejects the incoming USDC — the amount is recorded on-chain against your address and you can withdraw it yourself at any time. What you are owed never depends on the keeper, or anyone, choosing to pay you.</p>
 <h2 id="what-keeps-it-running">What keeps it running</h2>
-<p>The fee is taken on volume, not on price direction, so the pool earns on sells as heavily as on buys. A falling market that is still being traded still pays holders. The buyback portion pushes liquidity back into the pool as it goes. And because the split is fixed and the owner is renounced, the flow of USDC to holders cannot be rerouted once the token is live.</p>
+<p>The fee is taken on volume, not on price direction, so the pool earns on sells as heavily as on buys. A falling market that is still being traded still pays holders. The buyback portion pushes liquidity back into the pool as it goes. And because the split is fixed in constants with no setter, the flow of USDC to holders cannot be rerouted once the token is live.</p>
 </article></main><!-- In-page anchors. Rendered only when the page has more than one H2:
            a rail listing a single section is noise. --><aside class="rail" aria-label="On this page"><p class="rail__title">On this page</p><ul class="rail__list"><li><a class="rail__link" href="#the-5-pool-fee">The 5% pool fee</a></li><li><a class="rail__link" href="#conversion-to-usdc">Conversion to USDC</a></li><li><a class="rail__link" href="#the-split">The split</a></li><li><a class="rail__link" href="#how-you-get-paid">How you get paid</a></li><li><a class="rail__link" href="#what-keeps-it-running">What keeps it running</a></li></ul></aside></div><footer class="foot"><p class="cap">$IUG — documentation</p><p class="cap">Arc · chain 5042</p></footer></body></html>

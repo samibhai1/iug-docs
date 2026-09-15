@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tokenomics &amp; guarantees — $IUG docs</title><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="preload" as="font" type="font/woff2" href="/fonts/MartianMono-Bold.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="/fonts/FixelText-Regular.woff2" crossorigin><link rel="stylesheet" href="/_astro/_..CxI_XpfV.css"></head><body><a class="skip" href="#doc">Skip to content</a><header class="topbar"><a class="brand" href="/"><b>$IUG</b><span class="brand__tag">docs</span></a><a class="topbar__out" href="https://iugarc.xyz" rel="noopener noreferrer">The $IUG site ↗</a></header><div class="shell"><!-- MOBILE: a checkbox disclosure. DESKTOP: the control is hidden and the
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tokenomics &amp; guarantees — $IUG docs</title><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="preload" as="font" type="font/woff2" href="/fonts/MartianMono-Bold.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="/fonts/FixelText-Regular.woff2" crossorigin><link rel="stylesheet" href="/_astro/_..CxI_XpfV.css"></head><body><a class="skip" href="#doc">Skip to content</a><header class="topbar"><a class="brand" href="/"><b>$IUG</b><span class="brand__tag">docs</span></a></header><div class="shell"><!-- MOBILE: a checkbox disclosure. DESKTOP: the control is hidden and the
            panel is always shown (see .sidenav in global.css) — one control, no
            script.
 
@@ -16,8 +16,8 @@
 <h2 id="2-maximum-wallet">2% maximum wallet</h2>
 <p>No single address can hold more than <strong>2% of supply</strong> — 20,000,000 $IUG. This is a permanent constant, not a launch setting that gets loosened later. A transfer that would push a wallet over 2% is rejected.</p>
 <p>The cap limits how much of the reward stream any one holder can capture, and it makes a single wallet quietly accumulating most of the supply impossible.</p>
-<h2 id="renounced-owner">Renounced owner</h2>
-<p>$IUG has no owner. The contract exposes no privileged functions — no pause, no blacklist, no fee change, no way to alter the reward split or the max wallet. The rules you read here are the rules for the life of the token, because there is no address with the authority to change them.</p>
+<h2 id="no-owner-on-the-token">No owner on the token</h2>
+<p>The $IUG token has no owner. It exposes no privileged functions — no pause, no blacklist, no fee change, no way to alter the max wallet. The fee split and the reward rules are constants in the fee manager and distributor, which have no setter for them. Those two contracts do have an owner, a multisig, whose powers are listed on the <a href="safety">Safety</a> page; none of them can change the rules you read here.</p>
 <h2 id="locked-liquidity">Locked liquidity</h2>
 <p>The pool’s liquidity position is locked, so the tokens and USDC backing the market cannot be pulled out. Fees the pool earns are still collectable — that is what funds rewards — but the liquidity itself stays in place. A rug that works by draining the pool is not available here.</p>
 <h2 id="the-fee-split-fixed">The fee split, fixed</h2>
@@ -36,7 +36,7 @@
 </tr>
 <tr>
 <td>10%</td>
-<td>Growth (raid rewards + buybacks)</td>
+<td>Growth — one address; its split between raid rewards and buybacks is policy, not contract</td>
 </tr>
 <tr>
 <td>10%</td>
@@ -48,4 +48,4 @@
 <h2 id="why-constant-matters">Why “constant” matters</h2>
 <p>In a lot of tokens the dangerous parts — the fee, the max wallet, the mint, the owner’s powers — live in storage and can be changed by whoever controls the contract. In $IUG they are compile-time constants. Changing any of them would mean deploying a different contract at a different address, which would not be $IUG. That is the guarantee: the version you buy is the only version there is.</p>
 </article></main><!-- In-page anchors. Rendered only when the page has more than one H2:
-           a rail listing a single section is noise. --><aside class="rail" aria-label="On this page"><p class="rail__title">On this page</p><ul class="rail__list"><li><a class="rail__link" href="#supply">Supply</a></li><li><a class="rail__link" href="#the-whole-supply-is-in-the-pool">The whole supply is in the pool</a></li><li><a class="rail__link" href="#2-maximum-wallet">2% maximum wallet</a></li><li><a class="rail__link" href="#renounced-owner">Renounced owner</a></li><li><a class="rail__link" href="#locked-liquidity">Locked liquidity</a></li><li><a class="rail__link" href="#the-fee-split-fixed">The fee split, fixed</a></li><li><a class="rail__link" href="#why-constant-matters">Why “constant” matters</a></li></ul></aside></div><footer class="foot"><p class="cap">$IUG — documentation</p><p class="cap">Arc · chain 5042</p></footer></body></html>
+           a rail listing a single section is noise. --><aside class="rail" aria-label="On this page"><p class="rail__title">On this page</p><ul class="rail__list"><li><a class="rail__link" href="#supply">Supply</a></li><li><a class="rail__link" href="#the-whole-supply-is-in-the-pool">The whole supply is in the pool</a></li><li><a class="rail__link" href="#2-maximum-wallet">2% maximum wallet</a></li><li><a class="rail__link" href="#no-owner-on-the-token">No owner on the token</a></li><li><a class="rail__link" href="#locked-liquidity">Locked liquidity</a></li><li><a class="rail__link" href="#the-fee-split-fixed">The fee split, fixed</a></li><li><a class="rail__link" href="#why-constant-matters">Why “constant” matters</a></li></ul></aside></div><footer class="foot"><p class="cap">$IUG — documentation</p><p class="cap">Arc · chain 5042</p></footer></body></html>
